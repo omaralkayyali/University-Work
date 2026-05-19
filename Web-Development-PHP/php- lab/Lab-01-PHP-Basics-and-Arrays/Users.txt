@@ -1,0 +1,23 @@
+Users
+id   -> int 4 , primary key, auto increment 
+username -> varchar , char   10 , txt 
+fname -> varchar 25
+lname -> varchar 25
+email -> varchar 25
+password -> varchar 50 crypto    sha, md5
+image -> varchar link 50
+roleid -> forgin key  int 4
+depid ->forgin key  int 4
+reg_date -> time stamp
+
+
+
+===============
+role
+id
+name
+
+=========
+departments
+id
+dep_name
