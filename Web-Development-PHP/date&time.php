@@ -1,6 +1,11 @@
 <?php
-// checkdate(month, day, year)
-// The month must be between 1 and 12. 
-// Corrected the month from 22 to 12 (December).
-echo checkdate(12, 22, 2000) ? 'true' : 'false';
+header("Refresh:2");
+date_default_timezone_set('Asia/Amman');
+$date=getdate();
+//echo $date['mday'].$date['month'].$date['year'];
+//print_r($date);
+$today=date('d-m-Y g:i:s A');
+echo $today;
+echo checkdate(22,22,2000) ? 'true':'false';
+
 ?>
