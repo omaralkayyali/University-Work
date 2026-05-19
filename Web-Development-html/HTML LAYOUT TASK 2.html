@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Layout Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        .example {
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #aaa;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Layout Techniques</h1>
+
+    <table>
+        <tr>
+            <th>Technique</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>CSS Framework</td>
+            <td>Use frameworks like Bootstrap for layouts.</td>
+            <td class="example">.container .row .col</td>
+        </tr>
+        <tr>
+            <td>CSS Float</td>
+            <td>Float elements to arrange side by side.</td>
+            <td class="example">
+                <div style="float:left;width:45%;border:1px solid;">Box 1</div>
+                <div style="float:right;width:45%;border:1px solid;">Box 2</div>
+            </td>
+        </tr>
+        <tr>
+            <td>CSS Flexbox</td>
+            <td>Use flex display for rows/columns.</td>
+            <td class="example" style="display:flex;gap:5px;">
+                <div style="flex:1;border:1px solid;">Box 1</div>
+                <div style="flex:1;border:1px solid;">Box 2</div>
+            </td>
+        </tr>
+        <tr>
+            <td>CSS Grid</td>
+            <td>Use grid for multi-column layouts.</td>
+            <td class="example" style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
+                <div style="border:1px solid;">Box 1</div>
+                <div style="border:1px solid;">Box 2</div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

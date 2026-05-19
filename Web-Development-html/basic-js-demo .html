@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Programming Concepts Demo</h1>
+        
+        <p>This page demonstrates basic JavaScript concepts including variables, functions, control structures, and DOM manipulation.</p>
+        
+        <p id="mainParagraph">This paragraph has an ID attribute and can be styled dynamically using JavaScript.</p>
+        
+        <div class="result">
+            <h3>Variables Display:</h3>
+            <p id="variablesOutput"></p>
+        </div>
+        
+        <div class="result">
+            <h3>Function Result:</h3>
+            <p id="functionOutput"></p>
+        </div>
+        
+        <div class="result">
+            <h3>Control Structure Message:</h3>
+            <p id="controlOutput"></p>
+        </div>
+        
+        <button onclick="changeStyle()">Change Paragraph Style</button>
+    </div>
+
+    <script>
+        // 2. JavaScript Variables
+        var myNumber = 15;
+        var myString = "Hello, JavaScript!";
+        var myCalculation = myNumber * 3 + 10;
+        
+        // Display variables on the page
+        document.getElementById("variablesOutput").innerHTML = 
+            "<strong>Number:</strong> " + myNumber + "<br>" +
+            "<strong>String:</strong> " + myString + "<br>" +
+            "<strong>Calculation (15 * 3 + 10):</strong> " + myCalculation;
+        
+        // 3. JavaScript Function
+        function calculateSum(num1, num2) {
+            return num1 + num2;
+        }
+        
+        function calculateProduct(num1, num2) {
+            return num1 * num2;
+        }
+        
+        // Call functions and display results
+        var sum = calculateSum(25, 35);
+        var product = calculateProduct(7, 8);
+        
+        document.getElementById("functionOutput").innerHTML = 
+            "<strong>Sum of 25 + 35:</strong> " + sum + "<br>" +
+            "<strong>Product of 7 × 8:</strong> " + product;
+        
+        // 4. Control Structure (if...else)
+        var testNumber = 15;
+        var message;
+        
+        if (testNumber < 20) {
+            message = "Good Day! (The number " + testNumber + " is less than 20)";
+        } else {
+            message = "Good Evening! (The number " + testNumber + " is 20 or greater)";
+        }
+        
+        document.getElementById("controlOutput").innerHTML = message;
+        
+        // 5. DOM & Style Manipulation
+        var colorIndex = 0;
+        var colors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#ffeaa7"];
+        var fontSizes = [16, 18, 20, 22, 24];
+        
+        function changeStyle() {
+            var paragraph = document.getElementById("mainParagraph");
+            
+            // Change color
+            paragraph.style.color = colors[colorIndex];
+            
+            // Change font size
+            paragraph.style.fontSize = fontSizes[colorIndex] + "px";
+            
+            // Change font weight for variety
+            paragraph.style.fontWeight = "bold";
+            
+            // Cycle through colors
+            colorIndex = (colorIndex + 1) % colors.length;
+        }
+    </script>
+</body>
+</html>
