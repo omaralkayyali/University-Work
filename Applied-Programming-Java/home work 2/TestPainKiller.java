@@ -12,7 +12,7 @@ public class TestPainKiller {
             System.out.print("Enter Name: ");
             p[i].setName(in.next());
             System.out.print("Enter Price: ");
-            p[i].setPrice(in.nextInt());
+            p[i].setPrice(in.nextDouble());
             System.out.print("Enter Type: ");
             p[i].setType(in.next().charAt(0));
             System.out.println("---------------------");

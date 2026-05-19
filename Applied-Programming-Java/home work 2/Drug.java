@@ -13,12 +13,12 @@ public class Drug {
     }
 
     // Setters and Getters
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public int getPrice() {
-        return (int) price;
+    public double getPrice() {
+        return price;
     }
 
     public void setType(char type) {
