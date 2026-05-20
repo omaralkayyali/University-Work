@@ -1,0 +1,61 @@
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+p.one{border-style:solid ;
+border-width:10px ;
+border-color: rgb(184, 216, 41); 
+ }
+
+h2{
+color: cadetblue;
+background: green;
+  }
+  .zuj{
+
+    color: chartreuse;
+    font-size: 50px;
+  }
+
+  #amman{
+
+    color:red;
+  
+font-size: 40;}
