@@ -1,48 +1,87 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Layout Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f7f6;
-            color: #333;
-        }
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            background-color: #2196F3;
-            padding: 10px;
-        }
-        .flex-item {
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(0, 0, 0, 0.15);
-            padding: 20px;
-            flex: 1 1 150px;
-            min-width: 150px;
-            text-align: center;
-            font-size: 18px;
-        }
-        @media (max-width: 600px) {
-            .flex-item {
-                min-width: 100%;
-            }
-        }
-    </style>
+<title>Flexbox Layout Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.box h2 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 <body>
-    <h1>Flexbox Layout Example</h1>
-    <p>This example demonstrates a responsive flexbox container that wraps items on smaller screens.</p>
-    <div class="flex-container">
-        <div class="flex-item">Item 1</div>
-        <div class="flex-item">Item 2</div>
-        <div class="flex-item">Item 3</div>
-        <div class="flex-item">Item 4</div>
-        <div class="flex-item">Item 5</div>
-    </div>
+<header>
+  <h1>Flexbox Layout Example</h1>
+</header>
+
+<div class="container">
+  <div class="box">
+    <h2>Item 1</h2>
+    <p>This box uses Flexbox. Resize the browser to see how items wrap and adjust automatically.</p>
+  </div>
+  <div class="box">
+    <h2>Item 2</h2>
+    <p>Flexbox makes responsive layouts easier by controlling spacing, alignment, and item sizes.</p>
+  </div>
+  <div class="box">
+    <h2>Item 3</h2>
+    <p>The items above are flexible. Each one can grow or shrink based on available width.</p>
+  </div>
+</div>
+
+<footer>
+  <p>Responsive Flexbox Layout</p>
+</footer>
 </body>
 </html>
